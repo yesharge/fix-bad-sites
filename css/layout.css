@@ -1,0 +1,89 @@
+:root {
+--grid-row-gap-value: 20px;
+}
+.container {
+	display:flex;
+	flex-direction: column;
+/*
+display:grid;
+grid-template-rows: 150px 150px;
+grid-template-columns: 7fr 7fr;
+grid-row-gap: var(--grid-row-gap-value);
+margin: var(--grid-row-gap-value);*/
+}
+.container {
+	display:grid;
+	grid-row-gap: var(--grid-row-gap-value);
+	grid-template-columns: auto 250px;
+	height: calc(100vh-(var(--grid-row-gap-value)*2));
+	margin: var(--grid-row-gap-value);
+	grid-column-gap: 20px;
+	padding: 25px;
+}
+#header {
+	top: 0px;
+
+}
+#header .logo__img{
+	display:flex;
+justify-content: center;
+align-items: center;
+
+}
+#header .slogan {
+display:flex;
+justify-content: center;
+align-items: center;
+
+}
+.sidebar__links__top {
+display:flex;
+justify-content: space-around;
+align-items: center;
+}
+.Tariff__link{
+	align-items: center;
+}
+.bottom__links {
+display:flex;
+justify-content: space-around;
+}
+.title__images {
+display:flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+}
+.title__images img {
+width: 700px;
+ height: 400px;
+ object-fit: cover;
+}
+.Phone__Numbers{
+	display:flex;
+	flex-direction: column;
+	justify-content: center;
+align-items: center;
+}
+footer small {
+display:flex;
+justify-content: center;
+align-self: center;
+}
+footer p {
+display:flex;
+justify-content: center;
+align-self: center;
+ padding: 5px;
+}
+footer .Locations {
+	display:flex;
+justify-content: center;
+align-self: center;
+}
+footer .Email {
+display:flex;
+justify-content: center;
+align-self: center;
+ padding: 10px;
+}
